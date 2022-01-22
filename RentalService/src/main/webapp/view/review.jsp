@@ -1,3 +1,4 @@
+<%@page import="model.dao.CarDAO"%>
 <%@page import="model.dao.ReviewDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -12,7 +13,8 @@
 <title>review</title>
 </head>
 <body>
-<% ReviewDAO revDao = ReviewDAO.getInstance(); %>
+<% ReviewDAO revDao = ReviewDAO.getInstance();
+CarDAO carDao = CarDAO.getInstance();%>
 	<div class="wrap review">
 		<%@ include file="/common/header.jsp"%>
 		<main>
@@ -24,7 +26,15 @@
 			<% for(int i=0;i<revDao.getLists().size();i++){%>
 				<article>
 					<div class="carInfo">
-						<div><img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/story/hero_image/1908-Ford-Model-T_0.jpg" alt=""></div>
+						<div><img src="
+						<%
+						for(int j=0;j<carDao.getLists().size();j++){
+							if(revDao.getLists().get(i).getReservedCar().equals(carDao.getLists().get(j).getName())){
+						%>
+						<%=carDao.getLists().get(j).getImg() %>
+						<%}}%>
+						
+						" alt="<%= revDao.getLists().get(i).getReservedCar() %>"></div>
 						<div>
 							<p class="userName">작성자 : <%= revDao.getLists().get(i).getUserName() %></p>
 							<p class="reviewContxt">차종 : <%= revDao.getLists().get(i).getReservedCar() %></p>
