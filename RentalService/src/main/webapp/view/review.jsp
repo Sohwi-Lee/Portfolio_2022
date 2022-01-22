@@ -32,8 +32,7 @@ CarDAO carDao = CarDAO.getInstance();%>
 							if(revDao.getLists().get(i).getReservedCar().equals(carDao.getLists().get(j).getName())){
 						%>
 						<%=carDao.getLists().get(j).getImg() %>
-						<%}}%>
-						
+						<%}}%>						
 						" alt="<%= revDao.getLists().get(i).getReservedCar() %>"></div>
 						<div>
 							<p class="userName">작성자 : <%= revDao.getLists().get(i).getUserName() %></p>
