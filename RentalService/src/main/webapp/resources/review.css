@@ -1,0 +1,13 @@
+/* review page */
+section > div > div{display: flex; flex-wrap: wrap;}
+article{width:30%; max-width:400px; margin:10px 1vw; border:1px solid lightgray; border-radius:5px; background:white;}
+/* article > img, article > div{float:left;} */
+img{max-width:200px; width:100%;}
+.carInfo{display: flex; flex-wrap:no-wrap; align-items: center;}
+.carInfo > div:first-child{margin:20px 20px 10px 0;}
+.reviewTxt{padding:0 20px 20px;}
+.score{margin-bottom:10px; color:dodgerblue;}
+
+.reserveInfo{max-height:130px;overflow:auto;overflow-wrap: break-word;}
+
+/* reveiw Write page */

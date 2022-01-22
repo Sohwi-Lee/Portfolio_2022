@@ -1,0 +1,8 @@
+main{min-height:calc(100% - 360px);}
+main form{margin-bottom:80px;}
+h2{padding:30px 4vw;}
+form table{width:90%; margin:0 auto 30px;}
+.btns{width:90%; margin:0 auto; justify-content:flex-end; gap:10px;}
+.termBox, .privacyBox{width:70%;height:250px; overflow: auto;}
+
+.warning{display:none; color:red; font-size:0.9em;}

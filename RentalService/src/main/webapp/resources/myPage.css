@@ -1,0 +1,4 @@
+table{width:60%; margin:10px 4vw;}
+tr td{padding:5px 10px;}
+tr td:first-child{border-right:1px solid lightgray;}
+#delUser{padding:10px 4vw;}

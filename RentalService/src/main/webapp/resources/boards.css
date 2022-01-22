@@ -1,0 +1,33 @@
+/* event & notice page */
+main{min-height:calc(100vh - 360px);}
+section > div{overflow:hidden; padding-bottom:50px;}
+.event h2,.notice h2, .event h3,.notice h3{padding:30px 4vw;}
+.event table, .notice table{width:90%; margin:0 auto 30px; border-bottom:2px solid black;}
+
+.event table thead tr td,.notice table thead tr td{font-weight: 600;}
+.event table td,.notice table td{text-align: center; padding:10px;}
+.event .title,.notice .title{width:50%; text-align: inherit; padding:10px 20px;}
+.event .title input,.notice .title input{color:black; width:100%; font-size:1em;text-align:left;background:transparent;}
+
+/* eventView */
+.eventView main{min-height:calc(100vh - 360px); }
+.eventView section > div{ width:70%; margin:0 auto; overflow: hidden;}
+.eventView h2,.eventView h3{padding:30px 0;}
+.eventView h2, .eventView table{width:100%;}
+.eventView table .content, .eventView table td div{ min-height:400px;}
+.eventView table td{padding:8px 20px;}
+.eventView table td:first-child{width:25%; text-align: center; border-right:1px solid lightgray;}
+.eventView input[type=button]{float:right; margin:20px 0; }
+
+.toWritePage{float:right;margin-right:4vw;}
+
+/* comments */
+.commentBox{margin-bottom:20px; border:1px solid black;}
+.comment .editComment{display:none;}
+
+/* eventWrite */
+.eventWrite form{width:80%; margin:0 auto;}
+.eventWrite table{width:100%;}
+.eventWrite td{padding:0;}
+.eventWrite td:first-child{min-width:80px; font-weight: 600; text-align: center;}
+.eventWrite input[type=text],textarea{min-width: calc(100% - 22px);}
